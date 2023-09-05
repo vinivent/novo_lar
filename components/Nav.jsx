@@ -78,7 +78,7 @@ const Nav = () => {
         )}
       </div>
 
-      {/* Desktop Navigation */}
+      {/* Mobile Navigation */}
 
       <div className="sm:hidden flex relative">
         {session?.user ? (
