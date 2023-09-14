@@ -13,6 +13,10 @@ const PromptSchema = new Schema({
     type: String,
     required: [true, "Tag is required."],
   },
+  imageUrl : {
+    type: String,
+    required: [true, "Image URL is required."],
+  }
 });
 
 const Prompt = models.Prompt || model("Prompt", PromptSchema);
