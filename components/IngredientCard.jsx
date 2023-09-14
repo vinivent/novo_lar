@@ -25,8 +25,14 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
     router.push(`/profile/${post.creator._id}?name=${post.creator.username}`);
   };
 
+  const ingredients = post.prompt.split("\n").map((ingredient, index) => (
+    <p key={index} className="my-1 font-satoshi text-sm text-gray-700">
+      {ingredient}
+    </p>
+  ));
+
   return (
-    <div className="prompt_card">
+    <div className="prompt_card max-h-48 overflow-y-auto">
       <div className="flex justify-between items-start gap-5">
         <div
           className="flex-1 flex justify-start items-center gap-3 cursor-pointer"
@@ -62,7 +68,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
         </div>
       </div>
 
-      <p className="my-4 font-satoshi text-sm text-gray-700">{post.prompt}</p>
+      <p className="my-4 font-satoshi text-sm text-gray-700 ">{ingredients}</p>
       <p
         className="font-inter text-sm blue_gradient cursor-pointer"
         onClick={() => handleTagClick && handleTagClick(post.tag)}
