@@ -48,7 +48,7 @@ const MyProfile = () => {
   return (
     <Profile
       name="Meu "
-      desc="Bem-vindo ao seu mundo culinário"
+      desc="Bem-vindo ao seu mundo culinário!"
       data={posts}
       handleEdit={handleEdit}
       handleDelete={handleDelete}
