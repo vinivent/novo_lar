@@ -4,15 +4,15 @@ const Home = () => {
   return (
     <section className="w-full flex-center flex-col">
       <h1 className="head_text text-center">
-        Discover & Share
+        Descubra & Compartilhe
         <br className="max-md:hidden" />
-        <span className="orange_gradient text-center">AI-Powerd Prompts</span>
+        <span className="teal_gradient text-center">Receitas Deliciosas</span>
       </h1>
       <p className="desc text-center">
-        Promptopia is an open-souce AI prompting tool for modern world to
-        discover, create and share creative prompts
+        O Novo Lar é um blog com o foco em compartilhar e ajudar pessoas a se
+        apaixonarem pela culinária
       </p>
-     <Feed/>
+      <Feed />
     </section>
   );
 };
