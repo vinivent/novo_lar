@@ -1,5 +1,5 @@
 import { connectToDB } from "@utils/database";
-import Prompt from "@models/prompt";
+import Prompt from "@models/posts";
 import { stringify } from "postcss";
 
 export const GET = async (request, { params }) => {

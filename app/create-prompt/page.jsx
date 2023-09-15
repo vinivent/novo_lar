@@ -13,6 +13,7 @@ const CreatePrompt = () => {
   const [post, setPost] = useState({
     prompt: "",
     tag: "",
+    recipe: "",
   });
 
   const createPrompt = async (e) => {
@@ -26,6 +27,7 @@ const CreatePrompt = () => {
           prompt: post.prompt,
           userId: session?.user.id,
           tag: post.tag,
+          recipe: post.recipe,
         }),
       });
       if (res.ok) {

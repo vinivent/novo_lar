@@ -13,6 +13,10 @@ const PromptSchema = new Schema({
     type: String,
     required: [true, "Tag is required."],
   },
+  recipe: {
+    type: String,
+    required: [true, "Recipe link is required."],
+  },
 });
 
 const Prompt = models.Prompt || model("Prompt", PromptSchema);

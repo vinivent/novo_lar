@@ -1,5 +1,5 @@
 import { connectToDB } from "@utils/database";
-import Prompt from "@models/prompt";
+import Prompt from "@models/posts";
 
 export const GET = async (request, { params }) => {
   try {
@@ -14,4 +14,3 @@ export const GET = async (request, { params }) => {
     return new Response("Failed to fetch all prompts.", { status: 500 });
   }
 };
-
