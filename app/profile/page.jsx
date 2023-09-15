@@ -27,7 +27,7 @@ const MyProfile = () => {
 
   const handleDelete = async (post) => {
     const hasConfirmed = confirm(
-      "Está que certo que deseja apagar esse post?"
+      "Está que certo que deseja apagar essa receita?"
     );
     if (hasConfirmed) {
       try {
@@ -39,6 +39,7 @@ const MyProfile = () => {
           p._id !== post.id;
         });
         setPosts(filteredPosts);
+        router.push("/");
       } catch (error) {
         console.log(error);
       }
