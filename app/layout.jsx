@@ -3,8 +3,14 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-  title: "Promptopia",
-  description: "Discover and Share AI Prompts",
+  title: "Novo Lar",
+  description: "Descubra e Compartilhe Novas Receitas!",
+  icons: {
+    icon: ["/favicon/cara.ico"],
+    apple: ["/favicon/apple-touch-icon.png"],
+    shortcut: ["/favicon/apple-touch-icon.png"],
+  },
+  manifest: "/favicon/site.webmanifest",
 };
 
 const RootLayout = ({ children }) => {
