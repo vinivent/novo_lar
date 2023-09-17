@@ -17,6 +17,18 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       >
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
+            Nome da Receita {` `}
+          </span>
+          <input
+            value={post.title}
+            onChange={(e) => setPost({ ...post, title: e.target.value })}
+            placeholder="Escreva o nome da sua receita..."
+            required
+            className="form_input"
+          ></input>
+        </label>
+        <label>
+          <span className="font-satoshi font-semibold text-base text-gray-700">
             Sua Receita Culinária
           </span>
           <textarea
@@ -42,7 +54,17 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         </label>
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
-            Link da receita
+            Link da receita{" "}
+            <span className="font-light">
+              (entre{" "}
+              <a
+                href="https://upload-vinivent.vercel.app/"
+                className="text-blue-700 font-bold hover:border-b border-blue-700"
+              >
+                aqui
+              </a>{" "}
+              para pegar o link da imagem)
+            </span>
           </span>
           <input
             value={post.recipe}

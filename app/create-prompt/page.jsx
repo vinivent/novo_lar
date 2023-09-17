@@ -14,6 +14,7 @@ const CreatePrompt = () => {
     prompt: "",
     tag: "",
     recipe: "",
+    title: "",
   });
 
   const createPrompt = async (e) => {
@@ -28,10 +29,12 @@ const CreatePrompt = () => {
           userId: session?.user.id,
           tag: post.tag,
           recipe: post.recipe,
+          title: post.title,
         }),
       });
       if (res.ok) {
         router.push("/");
+        console.log("here: "+ post);
       }
     } catch (error) {
       console.log(error);

@@ -66,10 +66,11 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
         </div>
       </div>
 
-      <p className="my-4 font-satoshi text-sm text-gray-700 ">{ingredients}</p>
+      <p className="my-4 font-satoshi text-sm text-gray-700 ">{post.title}</p>
       <p className="my-4 font-satoshi text-sm text-gray-700 ">
-        Link da receita: {post.recipe}
+        <img src={post.recipe} alt={post.recipe} />
       </p>
+      <p className="my-4 font-satoshi text-sm text-gray-700 ">{ingredients}</p>
       <p
         className="font-inter text-sm blue_gradient cursor-pointer"
         onClick={() => handleTagClick && handleTagClick(post.tag)}

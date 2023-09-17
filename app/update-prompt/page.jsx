@@ -27,6 +27,7 @@ const EditPrompt = () => {
         prompt: data.prompt,
         tag: data.tag,
         recipe: data.recipe,
+        title: data.title
       });
     };
 
@@ -48,6 +49,7 @@ const EditPrompt = () => {
           prompt: post.prompt,
           tag: post.tag,
           recipe: post.recipe,
+          title: post.title
         }),
       });
       if (res.ok) {
