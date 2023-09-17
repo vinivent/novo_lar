@@ -1,6 +1,25 @@
 import Link from "next/link";
 
 const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
+
+  const validateLink = (url) => {
+    // Regular expression to match utfs.io links
+    const utfsIoPattern = /^https:\/\/utfs\.io\/.+/;
+
+    // Check if the URL matches the utfs.io pattern
+    return utfsIoPattern.test(url);
+  };
+
+  const handleLinkChange = (e) => {
+    const link = e.target.value;
+    if (validateLink(link)) {
+      setPost({ ...post, recipe: link });
+    } else {
+      // Display an error or handle invalid link
+      alert("Invalid link! Please enter a valid utfs.io link.");
+    }
+  };
+  
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className="head_text text-left">
@@ -59,6 +78,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
               (entre{" "}
               <a
                 href="https://upload-vinivent.vercel.app/"
+                target="_blank"
                 className="text-blue-700 font-bold hover:border-b border-blue-700"
               >
                 aqui
@@ -68,7 +88,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
           </span>
           <input
             value={post.recipe}
-            onChange={(e) => setPost({ ...post, recipe: e.target.value })}
+            onChange={handleLinkChange}
             placeholder="Insira o link da receita"
             required
             className="form_input"
