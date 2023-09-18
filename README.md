@@ -14,6 +14,7 @@ Novo Lar is a blog that allows users to share their culinary recipes. The applic
 - Viewing shared recipes.
 - Security and protection of users' information.
 
+
 ## Technologies Used
 
 - Next 13 (Framework)
@@ -36,14 +37,56 @@ The project is organized as follows:
 - `models`: MongoDB connection/configuration.
 - `utils`: MongoDB schema setup 
 
-![Example Screenshot](https://example.com/path-to-image.png)
+![Example Video](https://github.com/vinivent/novo_lar/assets/99739118/66495aef-7fb5-4c02-95cf-4c86c4fbfbca)
 
 ---
 
-[Link to Project Demo](https://example.com)
+[Link to Project Demo](https://novo-lar-nine.vercel.app/)
 
-[Link to Documentation](https://example.com/documentation)
+______________________________________________________
 
-[Link to Project Backend](https://github.com/your-username/novo-lar-backend)
+# Novo Lar
 
-[Link to Project Frontend](https://github.com/your-username/novo-lar-frontend)
+Este é o repositório do Novo Lar, um projeto web fullstack construído usando o framework Next 13.
+
+## Visão Geral
+
+Novo Lar é um blog que permite aos usuários compartilhar suas receitas culinárias. O aplicativo é construído com o framework Next 13, proporcionando uma experiência web completa. Os usuários podem criar contas usando a autenticação do Google fornecida pelo Next 13, garantindo segurança e facilidade de acesso. O MongoDB é usado como o banco de dados onde todas as informações são armazenadas. É importante notar que o Next 13 é altamente seguro e não tem acesso às informações confidenciais dos usuários, exceto seus endereços de e-mail.
+
+## Recursos
+
+- Autenticação de usuário via Google.
+- Criação, edição e exclusão de receitas culinárias.
+- Compartilhamento de receitas com outros usuários.
+- Visualização de receitas compartilhadas.
+- Segurança e proteção das informações dos usuários.
+
+## Tecnologias Utilizadas
+
+- Next 13 (Framework)
+- MongoDB (Banco de Dados)
+- Autenticação Google (Next 13)
+- JavaScript
+- Tailwind CSS (Estilização)
+
+## Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+
+- `app/api`: Contém o backend do Next Auth com o provedor do Google e lida com a autenticação do usuário.
+- `app/create-prompt`: Contém os componentes e lógica para criar novas receitas.
+- `app/profile`: Contém componentes e páginas relacionadas aos perfis de usuários.
+- `app/update-prompt`: Contém componentes e lógica para atualizar receitas existentes.
+- `app/layout.jsx`: Define a estrutura de layout para a aplicação.
+- `app/page.jsx`: Representa a página principal do blog.
+- `components`: Contém componentes React para diferentes partes da aplicação.
+- `models`: Conexão/configuração do MongoDB.
+- `utils`: Configuração de esquema do MongoDB.
+
+![Exemplo de Vídeo](https://github.com/vinivent/novo_lar/assets/99739118/66495aef-7fb5-4c02-95cf-4c86c4fbfbca)
+
+---
+
+[Link para Demonstração do Projeto](https://novo-lar-nine.vercel.app/)
+
+
