@@ -1,6 +1,5 @@
 import { connectToDB } from "@utils/database";
 import Prompt from "@models/posts";
-import { stringify } from "postcss";
 
 export const GET = async (request, { params }) => {
   try {
@@ -16,7 +15,7 @@ export const GET = async (request, { params }) => {
 };
 
 export const PATCH = async (request, { params }) => {
-  const { prompt, tag } = await request.json();
+  const { prompt, tag, recipe, title } = await request.json();
 
   try {
     await connectToDB();
@@ -26,7 +25,11 @@ export const PATCH = async (request, { params }) => {
       return new Response("Prompt not found", { status: 404 });
     existingPrompt.prompt = prompt;
     existingPrompt.tag = tag;
+    existingPrompt.recipe = recipe;
+    existingPrompt.title = title;
 
+    
+    console.log(existingPrompt)
     await existingPrompt.save();
     return new Response(JSON.stringify(existingPrompt), { status: 200 });
   } catch (error) {
