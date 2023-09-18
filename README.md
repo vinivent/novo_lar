@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Novo Lar
 
-## Getting Started
+This is the repository of Novo Lar, a fullstack web project built using the Next 13 framework.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Novo Lar is a blog that allows users to share their culinary recipes. The application is built with the Next 13 framework, providing a complete web experience. Users can create accounts using Google authentication provided by Next 13, ensuring security and ease of access. MongoDB is used as the database where all information is stored. It's important to note that Next 13 is highly secure and does not have access to users' confidential information, apart from their email addresses.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- User authentication via Google.
+- Creation, editing, and deletion of culinary recipes.
+- Sharing recipes with other users.
+- Viewing shared recipes.
+- Security and protection of users' information.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+- Next 13 (Framework)
+- MongoDB (Database)
+- Google Authentication (Next 13)
+- JavaScript
+- Tailwind CSS (Styling)
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is organized as follows:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `app/api`: Contains the Next Auth backend with Google provider and handles user authentication.
+- `app/create-prompt`: Contains the components and logic for creating new recipes.
+- `app/profile`: Contains components and pages related to user profiles.
+- `app/update-prompt`: Contains components and logic for updating existing recipes.
+- `app/layout.jsx`: Defines the layout structure for the application.
+- `app/page.jsx`: Represents the main page of the blog.
+- `components`: Contains React components for different parts of the application.
+- `models`: MongoDB connection/configuration.
+- `utils`: MongoDB schema setup 
 
-## Deploy on Vercel
+![Example Screenshot](https://example.com/path-to-image.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Link to Project Demo](https://example.com)
+
+[Link to Documentation](https://example.com/documentation)
+
+[Link to Project Backend](https://github.com/your-username/novo-lar-backend)
+
+[Link to Project Frontend](https://github.com/your-username/novo-lar-frontend)
