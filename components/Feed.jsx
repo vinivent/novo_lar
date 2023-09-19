@@ -82,10 +82,16 @@ const Feed = () => {
 
       {/* All Prompts */}
       {searchText ? (
-        <PromptCardList
-          data={searchedResults}
-          handleTagClick={handleTagClick}
-        />
+        searchedResults.length === 0 ? (
+          <p className="desc mt-14">Nenhuma receita foi encontrada.</p>
+        ) : (
+          <PromptCardList
+            data={searchedResults}
+            handleTagClick={handleTagClick}
+          />
+        )
+      ) : allPosts.length === 0 ? (
+        <p className="desc mt-14">Nenhuma receita foi encontrada.</p>
       ) : (
         <PromptCardList data={allPosts} handleTagClick={handleTagClick} />
       )}
