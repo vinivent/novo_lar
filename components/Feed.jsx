@@ -67,9 +67,13 @@ const Feed = () => {
     setSearchedResults(searchResult);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="feed">
-      <form className="relative w-full flex-center">
+      <form onSubmit={handleSubmit} className="relative w-full flex-center">
         <input
           type="text"
           placeholder="Procure por uma receita, hashtag ou usuário."
