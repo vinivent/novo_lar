@@ -119,7 +119,30 @@
 }
 
 .prompt_layout {
-  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 1fr)); /* Cria um número dinâmico de colunas com tamanho mínimo de 1 fracao */
+  gap: 1.5rem; /* Espaçamento entre as colunas */
+  margin-top: 1.5rem; /* Espaçamento superior */
+  padding-top: 2rem; /* Espaçamento superior */
+  padding-bottom: 2rem; /* Espaçamento inferior */
+}
+
+@media screen and (min-width: 640px) {
+  .prompt_layout {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas maiores que 640px */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .prompt_layout {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas maiores que 1280px */
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .prompt_layout {
+    grid-template-columns: repeat(1, 1fr); /* 1 coluna em dispositivos móveis */
+  }
 }
 
 /* Feed Component */
