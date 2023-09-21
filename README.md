@@ -37,7 +37,7 @@ The project is organized as follows:
 - `models`: MongoDB connection/configuration.
 - `utils`: MongoDB schema setup 
 
-![Example Video](https://github.com/vinivent/novo_lar/assets/99739118/66495aef-7fb5-4c02-95cf-4c86c4fbfbca)
+![Exemplo de Vídeo](https://github.com/vinivent/prato_facil/assets/99739118/4ec3b023-1078-45b5-a8f2-0c798cde4dfc)
 
 ---
 
@@ -83,7 +83,9 @@ O projeto está organizado da seguinte forma:
 - `models`: Conexão/configuração do MongoDB.
 - `utils`: Configuração de esquema do MongoDB.
 
-![Exemplo de Vídeo](https://github.com/vinivent/novo_lar/assets/99739118/66495aef-7fb5-4c02-95cf-4c86c4fbfbca)
+
+
+![Exemplo de Vídeo](https://github.com/vinivent/prato_facil/assets/99739118/4ec3b023-1078-45b5-a8f2-0c798cde4dfc)
 
 ---
 
