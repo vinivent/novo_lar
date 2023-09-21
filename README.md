@@ -41,7 +41,7 @@ The project is organized as follows:
 
 ---
 
-[Link to Project Demo](https://novo-lar-nine.vercel.app/)
+[Link to Project Demo](https://prato-facil.vercel.app)
 
 ______________________________________________________
 
@@ -87,6 +87,6 @@ O projeto está organizado da seguinte forma:
 
 ---
 
-[Link para Demonstração do Projeto](https://novo-lar-nine.vercel.app/)
+[Link para Demonstração do Projeto](https://prato-facil.vercel.app)
 
 
