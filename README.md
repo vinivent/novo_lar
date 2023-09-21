@@ -1,10 +1,10 @@
-# Novo Lar
+# Prato Fácil
 
-This is the repository of Novo Lar, a fullstack web project built using the Next 13 framework.
+This is the repository of Prato Fácil, a fullstack web project built using the Next 13 framework.
 
 ## Overview
 
-Novo Lar is a blog that allows users to share their culinary recipes. The application is built with the Next 13 framework, providing a complete web experience. Users can create accounts using Google authentication provided by Next 13, ensuring security and ease of access. MongoDB is used as the database where all information is stored. It's important to note that Next 13 is highly secure and does not have access to users' confidential information, apart from their email addresses.
+Prato Fácil is a blog that allows users to share their culinary recipes. The application is built with the Next 13 framework, providing a complete web experience. Users can create accounts using Google authentication provided by Next 13, ensuring security and ease of access. MongoDB is used as the database where all information is stored. It's important to note that Next 13 is highly secure and does not have access to users' confidential information, apart from their email addresses.
 
 ## Features
 
@@ -45,13 +45,13 @@ The project is organized as follows:
 
 ______________________________________________________
 
-# Novo Lar
+# Prato Fácil
 
-Este é o repositório do Novo Lar, um projeto web fullstack construído usando o framework Next 13.
+Este é o repositório do Prato Fácil, um projeto web fullstack construído usando o framework Next 13.
 
 ## Visão Geral
 
-Novo Lar é um blog que permite aos usuários compartilhar suas receitas culinárias. O aplicativo é construído com o framework Next 13, proporcionando uma experiência web completa. Os usuários podem criar contas usando a autenticação do Google fornecida pelo Next 13, garantindo segurança e facilidade de acesso. O MongoDB é usado como o banco de dados onde todas as informações são armazenadas. É importante notar que o Next 13 é altamente seguro e não tem acesso às informações confidenciais dos usuários, exceto seus endereços de e-mail.
+Prato Fácil é um blog que permite aos usuários compartilhar suas receitas culinárias. O aplicativo é construído com o framework Next 13, proporcionando uma experiência web completa. Os usuários podem criar contas usando a autenticação do Google fornecida pelo Next 13, garantindo segurança e facilidade de acesso. O MongoDB é usado como o banco de dados onde todas as informações são armazenadas. É importante notar que o Next 13 é altamente seguro e não tem acesso às informações confidenciais dos usuários, exceto seus endereços de e-mail.
 
 ## Recursos
 
