@@ -9,7 +9,7 @@ const Home = () => {
         <span className="teal_gradient text-center">Receitas Deliciosas</span>
       </h1>
       <p className="desc text-center">
-        O Novo Lar é um blog com o foco em compartilhar e ajudar pessoas a se
+        O Prato Fácil é um blog com o foco em compartilhar e ajudar pessoas a se
         apaixonarem pela culinária
       </p>
       <Feed />

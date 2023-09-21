@@ -3,10 +3,10 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-  title: "Novo Lar",
+  title: "Prato Fácil",
   description: "Descubra e Compartilhe Novas Receitas!",
   icons: {
-    icon: ["/favicon/cara.ico"],
+    icon: ["/favicon/teste.ico"],
     apple: ["/favicon/apple-touch-icon.png"],
     shortcut: ["/favicon/apple-touch-icon.png"],
   },
